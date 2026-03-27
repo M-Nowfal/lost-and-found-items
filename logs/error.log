@@ -1,0 +1,1082 @@
+[24-Mar-2026 09:21:00 UTC] PHP Warning:  include(views/layouts/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\lost-and-found-items\views\auth\login.php on line 109
+[24-Mar-2026 09:21:00 UTC] PHP Warning:  include(): Failed opening 'views/layouts/header.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\lost-and-found-items\views\auth\login.php on line 109
+[24-Mar-2026 09:21:05 UTC] PHP Warning:  include(views/layouts/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\lost-and-found-items\views\auth\login.php on line 109
+[24-Mar-2026 09:21:05 UTC] PHP Warning:  include(): Failed opening 'views/layouts/header.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\lost-and-found-items\views\auth\login.php on line 109
+[24-Mar-2026 09:21:08 UTC] PHP Warning:  include(views/layouts/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\lost-and-found-items\views\auth\register.php on line 128
+[24-Mar-2026 09:21:08 UTC] PHP Warning:  include(): Failed opening 'views/layouts/header.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\lost-and-found-items\views\auth\register.php on line 128
+[27-Mar-2026 11:03:09 UTC] Database connection failed: SQLSTATE[HY000] [1049] Unknown database 'lost_and_found_db'
+[27-Mar-2026 11:03:32 UTC] Database connection failed: SQLSTATE[HY000] [1049] Unknown database 'lost_and_found_db'
+[27-Mar-2026 11:03:32 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed. Please check your configuration. in D:\xampp\htdocs\lost-and-found-items\config\database.php:36
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(42): Database->__construct()
+#1 D:\xampp\htdocs\lost-and-found-items\config\database.php(98): Database::getInstance()
+#2 D:\xampp\htdocs\lost-and-found-items\models\User.php(11): getDB()
+#3 D:\xampp\htdocs\lost-and-found-items\controllers\AuthController.php(18): User->__construct()
+#4 D:\xampp\htdocs\lost-and-found-items\api\auth\login.php(23): AuthController->__construct()
+#5 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 36
+[27-Mar-2026 11:49:42 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 11:49:42 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 11:49:48 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 11:49:48 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 11:49:49 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 11:49:49 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 11:49:50 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 11:49:50 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 11:50:09 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 11:50:09 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 11:51:06 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 11:51:06 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 11:53:31 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 11:53:31 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 12:13:03 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 12:13:03 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 12:13:05 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 12:13:05 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 12:13:06 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 12:13:06 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 12:13:06 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 12:13:06 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 12:13:45 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 12:13:45 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 12:20:48 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 12:20:48 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 12:48:08 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 12:48:08 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 17:38:44 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 17:38:44 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT m.*, \n  ...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Match.php(51): Database->fetchAll('SELECT m.*, \n  ...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\user\dashboard.php(22): MatchModel->getByUserId(1)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 17:58:58 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\search.php on line 140
+[27-Mar-2026 17:59:06 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\search.php on line 140
+[27-Mar-2026 18:17:43 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 18:17:43 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(146): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\ItemController.php(150): Item->findPotentialMatches('1')
+#3 D:\xampp\htdocs\lost-and-found-items\controllers\ItemController.php(59): ItemController->findAndCreateMatches('1')
+#4 D:\xampp\htdocs\lost-and-found-items\api\items\create.php(25): ItemController->create(Array, Array)
+#5 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:17:54 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 18:17:54 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(146): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\ItemController.php(150): Item->findPotentialMatches('2')
+#3 D:\xampp\htdocs\lost-and-found-items\controllers\ItemController.php(59): ItemController->findAndCreateMatches('2')
+#4 D:\xampp\htdocs\lost-and-found-items\api\items\create.php(25): ItemController->create(Array, Array)
+#5 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:19:21 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 18:19:21 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(146): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\ItemController.php(150): Item->findPotentialMatches('3')
+#3 D:\xampp\htdocs\lost-and-found-items\controllers\ItemController.php(59): ItemController->findAndCreateMatches('3')
+#4 D:\xampp\htdocs\lost-and-found-items\api\items\create.php(25): ItemController->create(Array, Array)
+#5 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:19:25 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 18:19:25 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(146): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\ItemController.php(150): Item->findPotentialMatches('4')
+#3 D:\xampp\htdocs\lost-and-found-items\controllers\ItemController.php(59): ItemController->findAndCreateMatches('4')
+#4 D:\xampp\htdocs\lost-and-found-items\api\items\create.php(25): ItemController->create(Array, Array)
+#5 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:20:04 UTC] Query failed: SQLSTATE[HY093]: Invalid parameter number
+[27-Mar-2026 18:20:04 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(146): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\ItemController.php(150): Item->findPotentialMatches('5')
+#3 D:\xampp\htdocs\lost-and-found-items\controllers\ItemController.php(59): ItemController->findAndCreateMatches('5')
+#4 D:\xampp\htdocs\lost-and-found-items\api\items\create.php(25): ItemController->create(Array, Array)
+#5 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:24:20 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:24:20 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:26:09 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:26:09 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:28:51 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:28:51 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:31:28 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:31:28 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:31:35 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:31:35 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:32:03 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:32:03 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:32:06 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\search.php on line 140
+[27-Mar-2026 18:32:06 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:32:07 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:32:09 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:32:09 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:32:10 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:32:10 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:32:10 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:32:10 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:32:10 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:32:10 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:35:09 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:35:09 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:35:39 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:35:39 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:35:40 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:35:40 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:35:43 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:35:43 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:35:43 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:35:43 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:35:43 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:35:43 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:35:59 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:35:59 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:36:00 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:36:00 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:36:18 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:36:18 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:36:26 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:36:26 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:36:42 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:36:42 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:36:42 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:36:42 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 64
+[27-Mar-2026 18:36:42 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:36:42 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:37:12 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:37:12 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:37:42 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:37:42 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:38:12 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:38:12 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:38:42 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:38:42 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:39:13 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:39:13 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:39:43 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:39:43 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:39:55 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:55 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:55 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:55 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:55 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:39:55 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:39:56 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:56 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:56 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:56 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:57 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:39:57 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:39:58 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:39:58 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:39:59 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:59 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:59 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:59 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:39:59 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:39:59 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:40:01 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:40:01 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:40:04 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:40:04 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:40:34 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:40:34 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:40:38 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:40:38 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:40:40 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:40:40 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:41:10 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:41:10 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:41:42 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:41:42 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:42:10 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:42:10 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:42:30 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:30 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:30 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:30 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:30 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:42:30 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:42:33 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:42:33 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:42:39 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:40 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:40 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:40 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:40 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:42:40 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:42:48 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:48 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:48 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:48 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:49 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:42:49 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:42:50 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:42:50 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:42:51 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:51 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:51 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:51 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:51 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:42:51 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:42:52 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:52 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:52 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:52 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:52 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:42:52 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:42:53 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:53 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:53 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:53 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:42:54 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:42:54 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:42:58 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:42:58 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:43:02 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:43:02 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:43:06 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:43:06 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:43:08 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:43:08 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:43:38 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:43:38 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:44:04 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:44:04 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:44:34 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:44:34 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:45:04 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:45:04 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:45:34 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:45:34 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:46:04 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:46:04 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:46:34 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:46:34 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:47:04 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:47:04 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:48:07 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:48:07 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:49:07 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:49:07 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:50:07 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:50:07 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:51:08 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:51:08 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:52:07 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:52:07 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:52:15 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:52:15 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:52:35 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:52:35 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:52:42 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:52:42 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:52:44 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:44 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:44 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:44 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:45 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:52:45 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:52:49 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:49 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:49 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:49 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:49 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:52:49 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:52:51 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:51 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:51 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:51 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:52:51 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:52:51 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:52:57 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:52:57 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:01 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:01 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:08 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:08 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:10 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:10 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:10 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:10 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:10 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:10 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:20 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:20 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:25 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:25 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:28 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:28 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:28 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:28 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:28 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:28 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:32 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:32 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:36 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:36 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:37 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:37 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:37 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:37 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\items.php on line 68
+[27-Mar-2026 18:53:37 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:37 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:48 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:48 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:53:49 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\search.php on line 140
+[27-Mar-2026 18:53:49 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:53:49 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:54:19 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:54:19 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:54:28 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:54:28 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:54:34 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:54:34 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:54:35 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:54:35 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:54:37 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''50'' at line 1
+[27-Mar-2026 18:54:37 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT * FROM n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Notification.php(39): Database->fetchAll('SELECT * FROM n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\controllers\NotificationController.php(20): Notification->getByUserId(1, 50, false)
+#3 D:\xampp\htdocs\lost-and-found-items\api\notifications.php(21): NotificationController->getUserNotifications(50, false)
+#4 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:57:55 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''6'' at line 6
+[27-Mar-2026 18:57:58 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''6'' at line 6
+[27-Mar-2026 18:58:03 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''6'' at line 6
+[27-Mar-2026 18:58:09 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''6'' at line 6
+[27-Mar-2026 18:58:49 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''5'' at line 6
+[27-Mar-2026 18:58:49 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(176): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\admin\dashboard.php(35): Item->getRecent(5)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:58:54 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''5'' at line 6
+[27-Mar-2026 18:58:54 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(176): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\admin\dashboard.php(35): Item->getRecent(5)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:58:55 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''5'' at line 6
+[27-Mar-2026 18:58:55 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(176): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\admin\dashboard.php(35): Item->getRecent(5)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:58:56 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''5'' at line 6
+[27-Mar-2026 18:58:56 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(176): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\admin\dashboard.php(35): Item->getRecent(5)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:59:15 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''5'' at line 6
+[27-Mar-2026 18:59:15 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(176): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\admin\dashboard.php(35): Item->getRecent(5)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 18:59:31 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''5'' at line 6
+[27-Mar-2026 18:59:31 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(176): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\admin\dashboard.php(35): Item->getRecent(5)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 19:04:10 UTC] Query failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''5'' at line 6
+[27-Mar-2026 19:04:10 UTC] PHP Fatal error:  Uncaught Exception: Database query failed. in D:\xampp\htdocs\lost-and-found-items\config\database.php:58
+Stack trace:
+#0 D:\xampp\htdocs\lost-and-found-items\config\database.php(67): Database->query('SELECT i.*, u.n...', Array)
+#1 D:\xampp\htdocs\lost-and-found-items\models\Item.php(176): Database->fetchAll('SELECT i.*, u.n...', Array)
+#2 D:\xampp\htdocs\lost-and-found-items\views\admin\dashboard.php(35): Item->getRecent(5)
+#3 {main}
+  thrown in D:\xampp\htdocs\lost-and-found-items\config\database.php on line 58
+[27-Mar-2026 19:05:44 UTC] Email disabled - Would send to: nowfalmmuhammed@gmail.com, Subject: Your Account Has Been Verified!
+[27-Mar-2026 19:07:05 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\search.php on line 140
+[27-Mar-2026 19:09:30 UTC] PHP Warning:  Undefined variable $baseUrl in D:\xampp\htdocs\lost-and-found-items\views\user\search.php on line 140

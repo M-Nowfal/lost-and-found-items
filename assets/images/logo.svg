@@ -1,0 +1,27 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#667EEA"/>
+      <stop offset="1" stop-color="#764BA2"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="200" height="200" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#667EEA" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#logoGradient)" filter="url(#shadow)"/>
+  
+  <!-- Location Pin -->
+  <path d="M100 50C82.09 50 68 64.09 68 82C68 105 100 140 100 140C100 140 132 105 132 82C132 64.09 117.91 50 100 50Z" 
+        stroke="white" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Pin Center Dot -->
+  <circle cx="100" cy="82" r="16" stroke="white" stroke-width="6" fill="none"/>
+  
+  <!-- Shine Effect -->
+  <circle cx="75" cy="75" r="20" fill="white" fill-opacity="0.15"/>
+  
+  <!-- Question Mark -->
+  <text x="100" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="white">?</text>
+</svg>
