@@ -143,7 +143,7 @@ ob_start();
                         <div class="p-4 rounded-2xl border border-slate-100 hover:border-indigo-100 hover:bg-slate-50 transition-all flex items-center gap-4 group">
                             <div class="w-20 h-20 rounded-xl bg-slate-100 flex-shrink-0 overflow-hidden relative border border-slate-200">
                                 <?php if ($item['image_path']): ?>
-                                <img src="<?= $baseUrl . $item['image_path'] ?>" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <img src="<?= BASE_URL . $item['image_path'] ?>" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                                 <?php else: ?>
                                 <div class="w-full h-full flex items-center justify-center bg-slate-50">
                                     <span class="text-3xl opacity-40">📦</span>
@@ -209,7 +209,7 @@ ob_start();
                             </div>
                         </div>
                         <?php endforeach; ?>
-                        <a href="notifications.php" class="block w-full py-3 bg-white text-indigo-600 rounded-xl text-center text-xs font-black uppercase tracking-widest hover:bg-indigo-50 transition-colors mt-4">Review all matches</a>
+                        <a href="matches.php" class="block w-full py-3 bg-white text-indigo-600 rounded-xl text-center text-xs font-black uppercase tracking-widest hover:bg-indigo-50 transition-colors mt-4">Review all matches</a>
                     </div>
                     <?php endif; ?>
                 </div>
@@ -277,6 +277,7 @@ function closeModal() {
     setTimeout(() => {
         modal.display = 'none';
         window.history.replaceState({}, document.title, window.location.pathname);
+        window.location.reload();
     }, 300);
 }
 

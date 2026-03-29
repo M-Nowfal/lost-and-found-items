@@ -53,7 +53,8 @@ class ItemController {
             $this->notificationModel->createForUser(
                 getCurrentUserId(),
                 "Your " . $data['type'] . " item '{$data['title']}' has been reported. It's pending verification.",
-                'system'
+                'system',
+                "item-detail.php?id={$itemId}"
             );
             
             $potentialMatches = $this->findAndCreateMatches($itemId);
@@ -178,7 +179,9 @@ class ItemController {
                     $lostItem['user_id'],
                     $foundItem['user_id'],
                     $lostItem['title'],
-                    $foundItem['title']
+                    $foundItem['title'],
+                    $lostId,
+                    $foundId
                 );
             }
         }

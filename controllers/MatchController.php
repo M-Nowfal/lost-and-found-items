@@ -54,7 +54,9 @@ class MatchController {
                 $lostItem['user_id'],
                 $foundItem['user_id'],
                 $lostItem['title'],
-                $foundItem['title']
+                $foundItem['title'],
+                $lostItemId,
+                $foundItemId
             );
             
             return [
@@ -100,14 +102,23 @@ class MatchController {
         
         $this->matchModel->approve($id);
         
-        $this->itemModel->updateStatus($match['lost_item_id'], 'matched');
-        $this->itemModel->updateStatus($match['found_item_id'], 'matched');
-        
         $this->notificationModel->notifyMatchApproved(
             $match['lost_user_id'],
             $match['found_user_id'],
             $match['lost_title'],
-            $match['found_title']
+            $match['found_title'],
+            [
+                'name' => $match['lost_user_name'],
+                'email' => $match['lost_user_email'],
+                'phone' => $match['lost_user_phone'] ?? null
+            ],
+            [
+                'name' => $match['found_user_name'],
+                'email' => $match['found_user_email'],
+                'phone' => $match['found_user_phone'] ?? null
+            ],
+            $match['lost_item_id'],
+            $match['found_item_id']
         );
         
         try {
@@ -146,10 +157,43 @@ class MatchController {
             "Your potential match for '{$match['lost_title']}' was not approved.",
             'system'
         );
+        $this->notificationModel->createForUser(
+            $match['found_user_id'],
+            "The potential match for the item you found '{$match['found_title']}' was not approved.",
+            'system'
+        );
         
         return ['success' => true, 'message' => 'Match rejected'];
     }
     
+    public function userReject($id) {
+        requireLogin();
+        
+        $match = $this->matchModel->findById($id);
+        if (!$match) {
+            return ['success' => false, 'errors' => ['general' => 'Match not found']];
+        }
+        
+        // Only the Lost person (owner) or Found person can reject it themselves
+        if ($match['lost_user_id'] !== getCurrentUserId() && $match['found_user_id'] !== getCurrentUserId()) {
+            return ['success' => false, 'errors' => ['general' => 'Unauthorized']];
+        }
+        
+        $this->matchModel->reject($id);
+        
+        // Notify the other party about the user rejection
+        $otherUserId = ($match['lost_user_id'] === getCurrentUserId()) ? $match['found_user_id'] : $match['lost_user_id'];
+        $itemName = ($match['lost_user_id'] === getCurrentUserId()) ? $match['lost_title'] : $match['found_title'];
+
+        $this->notificationModel->createForUser(
+            $otherUserId,
+            "The potential match for your item '{$itemName}' was rejected by the other party.",
+            'system'
+        );
+        
+        return ['success' => true, 'message' => 'Match rejected successfully'];
+    }
+
     public function getStats() {
         return [
             'pending' => $this->matchModel->count('pending'),

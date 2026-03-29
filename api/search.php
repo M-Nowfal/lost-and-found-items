@@ -21,6 +21,10 @@ $filters = [];
 
 if (!empty($_GET['type'])) $filters['type'] = $_GET['type'];
 if (!empty($_GET['category'])) $filters['category'] = $_GET['category'];
+if (!empty($_GET['date'])) {
+    $filters['date_from'] = $_GET['date'];
+    $filters['date_to'] = $_GET['date'];
+}
 if (!empty($_GET['date_from'])) $filters['date_from'] = $_GET['date_from'];
 if (!empty($_GET['date_to'])) $filters['date_to'] = $_GET['date_to'];
 

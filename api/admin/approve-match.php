@@ -25,5 +25,5 @@ try {
     $result = $matchController->approve($matchId);
     jsonResponse($result, $result['success'] ? 200 : 400);
 } catch (Exception $e) {
-    jsonResponse(['success' => false, 'message' => 'Unauthorized'], 403);
+    jsonResponse(['success' => false, 'message' => $e->getMessage()], 403);
 }

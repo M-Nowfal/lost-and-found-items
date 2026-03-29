@@ -43,7 +43,7 @@ ob_start();
         <div class="space-y-6">
             <div class="aspect-square w-full rounded-[3rem] bg-white border border-slate-100 shadow-2xl shadow-indigo-100/50 overflow-hidden relative group">
                 <?php if ($item['image_path']): ?>
-                <img src="<?= $baseUrl . $item['image_path'] ?>" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                <img src="<?= BASE_URL . $item['image_path'] ?>" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
                 <?php else: ?>
                 <div class="w-full h-full flex flex-col items-center justify-center bg-slate-50/50">
                     <span class="text-8xl mb-4 group-hover:scale-125 transition-transform duration-500">📦</span>

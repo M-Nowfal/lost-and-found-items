@@ -158,7 +158,7 @@ ob_start();
             <div class="admin-list-item">
                 <div class="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden flex-shrink-0">
                     <?php if ($item['image_path']): ?>
-                    <img src="/<?= $item['image_path'] ?>" class="w-full h-full object-cover" alt="">
+                    <img src="<?= BASE_URL . $item['image_path'] ?>" class="w-full h-full object-cover" alt="">
                     <?php else: ?>
                     <span class="text-lg">📦</span>
                     <?php endif; ?>

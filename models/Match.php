@@ -19,8 +19,8 @@ class MatchModel {
         $sql = "SELECT m.*, 
                 l.title as lost_title, l.description as lost_description, l.location as lost_location, l.date as lost_date,
                 f.title as found_title, f.description as found_description, f.location as found_location, f.date as found_date,
-                lu.name as lost_user_name, lu.email as lost_user_email,
-                fu.name as found_user_name, fu.email as found_user_email
+                lu.name as lost_user_name, lu.email as lost_user_email, lu.id as lost_user_id, lu.phone as lost_user_phone,
+                fu.name as found_user_name, fu.email as found_user_email, fu.id as found_user_id, fu.phone as found_user_phone
                 FROM `matches` m
                 JOIN items l ON m.lost_item_id = l.id
                 JOIN items f ON m.found_item_id = f.id

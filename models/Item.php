@@ -118,7 +118,7 @@ class Item {
         $sql = "SELECT i.*, u.name as user_name, u.email as user_email 
                 FROM items i 
                 JOIN users u ON i.user_id = u.id 
-                WHERE {$where} AND i.verified = 1 AND i.status != 'claimed'
+                WHERE {$where} AND i.status != 'claimed'
                 ORDER BY i.created_at DESC";
         
         return $this->db->fetchAll($sql, $params);
@@ -132,15 +132,14 @@ class Item {
         
         $sql = "SELECT i.*, u.name as user_name, 
                 (CASE WHEN i.category = :category THEN 30 ELSE 0 END +
-                 CASE WHEN i.location = :location THEN 40 ELSE 0 END +
-                 CASE WHEN i.date BETWEEN DATE_SUB(:date1, INTERVAL 3 DAY) AND DATE_ADD(:date2, INTERVAL 3 DAY) THEN 30 ELSE 0 END) as similarity_score
+                 CASE WHEN i.location = :location THEN 20 ELSE 0 END +
+                 CASE WHEN i.date BETWEEN DATE_SUB(:date1, INTERVAL 5 DAY) AND DATE_ADD(:date2, INTERVAL 5 DAY) THEN 20 ELSE 0 END) as similarity_score
                 FROM items i 
                 JOIN users u ON i.user_id = u.id 
                 WHERE i.type = :opposite_type 
                 AND i.category = :category2 
-                AND i.verified = 1 
                 AND i.status = 'pending'
-                HAVING similarity_score >= :threshold
+                HAVING similarity_score >= 30
                 ORDER BY similarity_score DESC";
         
         return $this->db->fetchAll($sql, [
@@ -149,8 +148,7 @@ class Item {
             'location' => $item['location'],
             'date1' => $item['date'],
             'date2' => $item['date'],
-            'opposite_type' => $oppositeType,
-            'threshold' => MATCH_SIMILARITY_THRESHOLD
+            'opposite_type' => $oppositeType
         ]);
     }
     

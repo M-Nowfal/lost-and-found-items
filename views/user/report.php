@@ -77,6 +77,7 @@ ob_start();
                     <div>
                         <label for="date" class="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Date <?= ucfirst($type) ?></label>
                         <input type="date" id="date" name="date" required 
+                               max="<?= date('Y-m-d') ?>"
                                class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all font-medium text-slate-900">
                     </div>
                 </div>
@@ -139,6 +140,62 @@ function previewImage(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+document.getElementById('reportForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const formData = new FormData(form);
+    const dateInput = document.getElementById('date');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    
+    // 1. Client-side Date Validation
+    const selectedDate = new Date(dateInput.value);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Reset time for comparison
+    
+    if (selectedDate > today) {
+        Toast.error("Date cannot be in the future. Please select a valid date.");
+        dateInput.classList.add('border-red-500', 'ring-red-500/20');
+        dateInput.focus();
+        return;
+    }
+    
+    // 2. Submit via AJAX for better UI
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Submitting... <div class="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>';
+    
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            Toast.success(result.message || "Report submitted successfully!");
+            setTimeout(() => {
+                window.location.href = 'dashboard.php';
+            }, 1500);
+        } else {
+            // Handle backend errors gracefully
+            if (result.errors) {
+                const firstError = Object.values(result.errors)[0];
+                Toast.error(firstError);
+            } else {
+                Toast.error(result.message || "An error occurred during submission.");
+            }
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Submit Report <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>';
+        }
+    } catch (error) {
+        console.error('Submission error:', error);
+        Toast.error("Failed to connect to the server. Please try again.");
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Submit Report <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>';
+    }
+});
 </script>
 
 <?php

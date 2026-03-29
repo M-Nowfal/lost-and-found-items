@@ -66,13 +66,13 @@ $assetsUrl = $webBase . '/assets/';
                         <a href="<?= $baseUrl ?>views/user/search.php" class="px-4 py-2 text-sm font-medium rounded-xl transition-all <?= ($currentPage ?? '') === 'search' ? 'bg-indigo-50 text-indigo-600' : 'text-slate-600 hover:text-indigo-600 hover:bg-indigo-50' ?>">Search</a>
                         
                         <!-- Notification Bell -->
-                        <div class="relative ml-2" onclick="toggleNotifications()">
-                            <button class="p-2 text-slate-500 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-all relative">
+                        <div class="relative ml-2">
+                            <a href="<?= $baseUrl ?>views/user/notifications.php" class="p-2 text-slate-500 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-all relative block">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
                                 </svg>
                                 <span class="notification-badge absolute top-1.5 right-1.5 w-4 h-4 bg-red-500 text-white text-[10px] font-bold flex items-center justify-center rounded-full border-2 border-white shadow-sm" style="display: none;">0</span>
-                            </button>
+                            </a>
                         </div>
 
                         <!-- User Menu -->
@@ -130,27 +130,60 @@ $assetsUrl = $webBase . '/assets/';
         </div>
     </nav>
 
-    <!-- Notification Dropdown -->
-    <div id="notificationDropdown" class="fixed right-4 top-20 w-[calc(100%-32px)] sm:w-80 max-h-[70vh] overflow-y-auto bg-white rounded-2xl shadow-2xl shadow-indigo-100 border border-slate-200 hidden z-[60]">
-        <div class="p-4 border-b border-slate-100 flex justify-between items-center sticky top-0 bg-white/95 backdrop-blur-sm">
-            <h3 class="font-bold text-slate-800">Notifications</h3>
-            <button id="markAllRead" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 bg-indigo-50 px-2 py-1 rounded-lg transition-all">Mark all read</button>
+    <!-- Mobile Sidebar -->
+    <aside class="sidebar h-full md:hidden">
+        <div class="sidebar-header">
+            <a href="<?= $baseUrl ?>" class="flex items-center gap-2">
+                <div class="p-1 rounded-lg bg-gradient-to-tr from-indigo-600 to-purple-600">
+                    <svg width="24" height="24" viewBox="0 0 36 36" fill="none">
+                        <path d="M18 10C14.134 10 11 13.134 11 17C11 21.5 18 26 18 26C18 26 25 21.5 25 17C25 13.134 21.866 10 18 10Z" stroke="white" stroke-width="2.5" fill="none"/>
+                    </svg>
+                </div>
+                <span class="text-lg font-black bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">Lost & Found</span>
+            </a>
         </div>
-        <div id="notificationList" class="divide-y divide-slate-50">
-            <!-- Notifications loaded via JS -->
+
+        <nav class="flex-1 space-y-1 my-5">
+            <?php if (isLoggedIn()): ?>
+                <a href="<?= $baseUrl ?>views/user/dashboard.php" class="sidebar-link <?= ($currentPage ?? '') === 'dashboard' ? 'active' : '' ?>">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    Dashboard
+                </a>
+                <a href="<?= $baseUrl ?>views/user/search.php" class="sidebar-link <?= ($currentPage ?? '') === 'search' ? 'active' : '' ?>">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    Search Items
+                </a>
+                <a href="<?= $baseUrl ?>views/user/items.php" class="sidebar-link <?= ($currentPage ?? '') === 'items' ? 'active' : '' ?>">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                    My Reports
+                </a>
+                <a href="<?= $baseUrl ?>views/user/matches.php" class="sidebar-link <?= ($currentPage ?? '') === 'matches' ? 'active' : '' ?>">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                    My Matches
+                </a>
+                <a href="<?= $baseUrl ?>views/user/notifications.php" class="sidebar-link <?= ($currentPage ?? '') === 'notifications' ? 'active' : '' ?>">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+                    Notifications
+                </a>
+            <?php else: ?>
+                <a href="<?= $baseUrl ?>" class="sidebar-link">Home</a>
+                <a href="<?= $baseUrl ?>views/auth/login.php" class="sidebar-link">Login</a>
+                <a href="<?= $baseUrl ?>views/auth/register.php" class="sidebar-link">Sign Up</a>
+            <?php endif; ?>
+        </nav>
+
+        <div class="mt-auto pt-6 border-t border-slate-50">
+            <?php if (isLoggedIn()): ?>
+                <a href="#" onclick="logout(); return false;" class="sidebar-link text-red-500 hover:text-red-500 hover:bg-red-500/20">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+                    Logout
+                </a>
+            <?php endif; ?>
         </div>
-        <div id="notificationEmpty" class="p-8 text-center text-slate-400" style="display: none;">
-            <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-3">
-                <svg class="w-8 h-8 opacity-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-                </svg>
-            </div>
-            <p class="text-sm font-medium">No notifications yet</p>
-        </div>
-    </div>
+    </aside>
 
     <!-- Mobile Sidebar Overlay -->
-    <div class="sidebar-overlay fixed inset-0 bg-slate-900/40 backdrop-blur-sm hidden z-[70] transition-opacity" onclick="toggleMobileMenu()"></div>
+    <div class="sidebar-overlay fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-[70] transition-opacity md:hidden" onclick="toggleMobileMenu()"></div>
 
     <!-- Main Content -->
     <main class="flex-1">

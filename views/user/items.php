@@ -65,7 +65,7 @@ ob_start();
             <!-- Image Section -->
             <div class="aspect-video w-full relative overflow-hidden bg-slate-100 border-b border-slate-50">
                 <?php if ($item['image_path']): ?>
-                <img src="<?= $baseUrl . $item['image_path'] ?>" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <img src="<?= BASE_URL . $item['image_path'] ?>" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                 <?php else: ?>
                 <div class="w-full h-full flex items-center justify-center bg-slate-50/50">
                     <span class="text-5xl opacity-20 group-hover:scale-125 transition-transform duration-500">📦</span>

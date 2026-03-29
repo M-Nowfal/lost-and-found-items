@@ -15,11 +15,12 @@ class Notification {
         return $this->db->insert('notifications', $data);
     }
     
-    public function createForUser($userId, $message, $type = 'system') {
+    public function createForUser($userId, $message, $type = 'system', $link = null) {
         return $this->create([
             'user_id' => $userId,
             'message' => $message,
-            'type' => $type
+            'type' => $type,
+            'link' => $link
         ]);
     }
     
@@ -72,32 +73,32 @@ class Notification {
         return $result['count'];
     }
     
-    public function notifyMatchFound($lostUserId, $foundUserId, $lostItemTitle, $foundItemTitle) {
+    public function notifyMatchFound($lostUserId, $foundUserId, $lostItemTitle, $foundItemTitle, $lostItemId, $foundItemId) {
         $this->createForUser(
             $lostUserId,
             "A potential match was found for your lost item: {$lostItemTitle}",
-            'match'
+            'match',
+            "item-detail.php?id={$lostItemId}"
         );
         
         $this->createForUser(
             $foundUserId,
             "A potential match was found for the item you found: {$foundItemTitle}",
-            'match'
+            'match',
+            "item-detail.php?id={$foundItemId}"
         );
     }
     
-    public function notifyMatchApproved($lostUserId, $foundUserId, $lostItemTitle, $foundItemTitle) {
-        $this->createForUser(
-            $lostUserId,
-            "Your lost item '{$lostItemTitle}' has been matched with a found item. Contact the finder to claim it!",
-            'match'
-        );
+    public function notifyMatchApproved($lostUserId, $foundUserId, $lostItemTitle, $foundItemTitle, $lostUserContact = [], $foundUserContact = [], $lostItemId = null, $foundItemId = null) {
+        $lostMsg = "Your lost item '{$lostItemTitle}' has been matched! Reach out to the finder: ";
+        $lostMsg .= "{$foundUserContact['name']} ({$foundUserContact['email']}" . (!empty($foundUserContact['phone']) ? ", {$foundUserContact['phone']}" : "") . ")";
         
-        $this->createForUser(
-            $foundUserId,
-            "Your found item '{$foundItemTitle}' has been approved. Contact the owner to return it!",
-            'match'
-        );
+        $this->createForUser($lostUserId, $lostMsg, 'match', "item-detail.php?id={$lostItemId}");
+        
+        $foundMsg = "Your found item '{$foundItemTitle}' has been approved! Reach out to the owner: ";
+        $foundMsg .= "{$lostUserContact['name']} ({$lostUserContact['email']}" . (!empty($lostUserContact['phone']) ? ", {$lostUserContact['phone']}" : "") . ")";
+        
+        $this->createForUser($foundUserId, $foundMsg, 'match', "item-detail.php?id={$foundItemId}");
     }
     
     public function notifyUserVerified($userId, $verified = true) {
@@ -108,11 +109,11 @@ class Notification {
         }
     }
     
-    public function notifyItemVerified($userId, $itemTitle, $verified = true) {
+    public function notifyItemVerified($userId, $itemTitle, $itemId, $verified = true) {
         if ($verified) {
-            $this->createForUser($userId, "Your item '{$itemTitle}' has been verified and is now visible to others.", 'verification');
+            $this->createForUser($userId, "Your item '{$itemTitle}' has been verified and is now visible to others.", 'verification', "item-detail.php?id={$itemId}");
         } else {
-            $this->createForUser($userId, "Your item '{$itemTitle}' is pending verification by an administrator.", 'verification');
+            $this->createForUser($userId, "Your item '{$itemTitle}' is pending verification by an administrator.", 'verification', "item-detail.php?id={$itemId}");
         }
     }
 }

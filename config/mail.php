@@ -15,7 +15,7 @@ define('MAIL_FROM', getenv('MAIL_FROM') ?: 'noreply@lostandfound.com');
 define('MAIL_FROM_NAME', getenv('MAIL_FROM_NAME') ?: 'Lost & Found Portal');
 
 // Enable/disable email (for development)
-define('MAIL_ENABLED', getenv('MAIL_ENABLED') ?: false);
+define('MAIL_ENABLED', getenv('MAIL_ENABLED') !== false ? getenv('MAIL_ENABLED') : true);
 
 /**
  * Simple Mailer Class using PHP mail()
@@ -27,6 +27,14 @@ class Mailer {
     public function send($to, $subject, $body, $isHtml = true) {
         if (!MAIL_ENABLED) {
             error_log("Email disabled - Would send to: {$to}, Subject: {$subject}");
+            return true;
+        }
+        
+        // Check if we are on localhost/xampp without mail server
+        $isLocal = in_array($_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1']);
+        
+        if ($isLocal && !ini_get('SMTP')) {
+            error_log("SIMULATED EMAIL SENT TO: {$to}\nSubject: {$subject}\nBody: " . strip_tags($body));
             return true;
         }
         

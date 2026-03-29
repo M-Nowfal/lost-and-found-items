@@ -35,7 +35,7 @@ ob_start();
                        class="w-full pl-14 pr-6 py-5 bg-transparent border-none focus:ring-0 font-bold text-slate-900 placeholder:text-slate-400 placeholder:font-medium text-lg">
             </div>
             
-            <button class="px-8 py-4 bg-slate-900 text-white font-black uppercase tracking-widest rounded-[1.8rem] hover:bg-slate-800 transition-all flex items-center justify-center gap-3">
+            <button id="searchBtn" class="px-8 py-4 bg-slate-900 text-white font-black uppercase tracking-widest rounded-[1.8rem] hover:bg-slate-800 transition-all flex items-center justify-center gap-3">
                 Search <span class="text-xl">🚀</span>
             </button>
         </div>
@@ -106,14 +106,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             const params = new URLSearchParams({
-                keyword: searchInput.value,
+                q: searchInput.value,
                 type: typeFilter.value,
                 category: categoryFilter.value,
                 date: dateFilter.value
             });
 
-            // Using ADMIN_API_BASE from header.php
-            const response = await fetch(`${ADMIN_API_BASE}api/items/search.php?${params}`);
+            // Using BASE_URL for API calls
+            const response = await fetch(`${ADMIN_API_BASE}api/search.php?${params}`);
             const data = await response.json();
 
             searchSkeleton.classList.add('hidden');
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
         div.className = 'bg-white rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group overflow-hidden flex flex-col';
         
         const typeClass = item.type === 'lost' ? 'bg-amber-500/90 text-white' : 'bg-emerald-500/90 text-white';
-        const imagePath = item.image_path ? `<?= $baseUrl ?>${item.image_path}` : '';
+        const imagePath = item.image_path ? `<?= BASE_URL ?>${item.image_path}` : '';
         const imageHtml = imagePath 
             ? `<img src="${imagePath}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">`
             : `<div class="w-full h-full flex items-center justify-center bg-slate-50/50"><span class="text-5xl opacity-20">📦</span></div>`;
@@ -174,6 +174,8 @@ document.addEventListener('DOMContentLoaded', () => {
         clearTimeout(timeout);
         timeout = setTimeout(performSearch, 500);
     });
+
+    document.getElementById('searchBtn').addEventListener('click', performSearch);
 
     [typeFilter, categoryFilter, dateFilter].forEach(el => {
         el.addEventListener('change', performSearch);
